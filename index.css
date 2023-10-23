@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("background-netflix.jpg");
+    position: relative;
+}
+body::before{
+    content: "";
+    background-color: #00000090;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+header{
+    position: relative;
+    display: flex;
+}
+header img{
+    width: 180px;
+    height: 110px;
+    position: relative;
+}
+.container-main{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.formulario-entrar{
+    width: 440px;
+    height: 550px;
+}
+.formulario-entrar form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    color: white;
+    background-color: #00000090;
+    position: relative;
+    border: 0;
+    border-radius: 5px;
+    
+}
+.formulario-entrar form .input-check span input:checked {
+    background-color: red;
+}
+.formulario-entrar form h2{
+    margin-top: 20px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.formulario-entrar form .div-input{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.formulario-entrar form .div-input input{
+    background-color: #3b3737;
+    width: 100%;
+    height: 48px;
+    bottom: 0;
+    position: absolute;
+    padding: 16px 20px 0px 20px;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+}
+.formulario-entrar form .div-input label{
+    position: absolute;
+    bottom: 15px;
+    left: 23px;
+}
+.formulario-entrar form .div-input input:focus + label,
+.formulario-entrar form .div-input input:valid + label{
+    bottom: 30px;
+    left: 23px;
+    font-size: 12px;
+}
+.formulario-entrar form button{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: red;
+    border: 0;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.formulario-entrar form div{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 25px;
+    opacity: 0.8;
+    font-size: 14px;
+}
+.formulario-entrar form div a{
+    color: white;
+    text-decoration: none;
+}
+
+.rodape{
+    background-color: #00000090;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+    padding-left: 300px;
+    padding-top: 40px;
+}
+.rodape div, a{
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: white;
+}
+.rodape div ul li a{
+    margin-right: 30px;
+}
+.rodape div ul li a:hover{
+    text-decoration: underline;
+}
+.rodape div a:hover{
+    text-decoration: underline;
+}
+.rodape .duvidas{
+    display: flex;
+}
+.rodape .links-rodape{
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+}
+
+.rodape .links-rodape ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+.rodape .links-rodape ul li a{
+    float: left;
+   text-decoration: none;
+}
+
+@media screen and (max-width: 480px){
+    *{
+        margin: 0;
+        padding: 0;
+        outline: none;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+    body{
+        background-image: none;
+        background-color: black;
+    }
+    .container-main .formulario-entrar form{
+        padding: 10px;
+    }
+    .container-main .formulario-entrar form h2{
+        margin-top: 0px;
+    }
+    .rodape{
+        opacity: 0.7;
+        padding-left: 10px;
+        border-top: 1px solid white;
+        bottom: 0;
+    }
+    .rodape .links-rodape, .duvidas{
+        width: 300px;
+    }
+    .rodape .links-rodape{
+        display: flex;
+        flex-direction:row;
+    }
+    .rodape .links-rodape ul li{
+        margin-top: 20px;
+    }
+    .rodape .links-rodape ul li a{
+        float: none;
+        font-size: 12px;
+    }
+
+}
+
